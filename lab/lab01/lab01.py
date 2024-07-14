@@ -10,7 +10,11 @@ def falling(n, k):
     >>> falling(4, 0)
     1
     """
-    "*** YOUR CODE HERE ***"
+    fact = 1
+    for i in range(k):
+        fact = fact * n
+        n = n - 1
+    return fact
 
 
 def divisible_by_k(n, k):
